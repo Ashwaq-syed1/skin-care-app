@@ -3,7 +3,8 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-const distPath = path.join(__dirname, 'dist/skin-care-app/browser/browser');
+const distPath = path.join(__dirname, 'dist/skin-care-app/browser');
+
 
 console.log('Using distPath:', distPath);
 console.log('index.html exists:', fs.existsSync(path.join(distPath, 'index.html')));

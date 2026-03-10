@@ -1,5 +1,5 @@
-import {OverlayModule} from '@angular/cdk/overlay';
-import {CommonModule} from '@angular/common';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { CommonModule } from '@angular/common';
 import {
   Component,
   computed,
@@ -13,20 +13,20 @@ import {
   signal,
   viewChild,
 } from '@angular/core';
-import {FormsModule} from '@angular/forms';
-import {MatButtonModule} from '@angular/material/button';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatIconModule} from '@angular/material/icon';
-import {MatInputModule} from '@angular/material/input';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import {MatTooltipModule} from '@angular/material/tooltip';
-import {DomSanitizer, SafeHtml} from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import * as prism from 'prismjs';
-import {take} from 'rxjs/operators';
-import {ChatMessageComponent} from './chat-message.component';
-import {ChatService} from './chat.service';
-import {STATIC_FILE_PATH} from './constants';
-import {ChatMessage, Profile, ViewCodeEvent} from './types';
+import { take } from 'rxjs/operators';
+import { ChatMessageComponent } from './chat-message.component';
+import { ChatService } from './chat.service';
+import { STATIC_FILE_PATH } from './constants';
+import { ChatMessage, Profile, ViewCodeEvent } from './types';
 
 @Component({
   selector: 'app-chat',
@@ -122,7 +122,10 @@ export class ChatComponent implements OnInit {
       {
         sender: 'bot',
         senderAvatar: `${STATIC_FILE_PATH}assistant.svg`,
-        text: "",
+        text: `Hi there! Looking for the perfect skincare? I'm here to help! Feel free to ask me to find products based on your needs, get detailed information about any item, or even check your order history. Plus, if you've got a favorite product, I can help you discover similar gems.
+
+        What can I do for you today?
+        `,
         timestamp: new Date(),
       },
     ]);

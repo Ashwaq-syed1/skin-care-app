@@ -23,7 +23,7 @@
           "options": {
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
-            "outputPath": "dist/skin-care-app/browser",
+            "outputPath": "dist/skin-care-app",
             "baseHref": "/",
             "inlineStyleLanguage": "scss",
             "assets": [
